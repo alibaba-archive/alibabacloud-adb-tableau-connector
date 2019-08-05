@@ -1,0 +1,790 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20192.19.0515.1630                               -->
+<workbook source-build='2019.2.0 (20192.19.0515.1630)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='test_results_combined' inline='true' name='textscan.1gc4mna00d9z6u19vsqbk09t94y2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='test_results' name='textscan.1gc4mna00d9z6u19vsqbk09t94y2leaf'>
+            <connection class='textscan' directory='Data/Users/georgewang/aliwork/connector-plugin-sdk/tdvt_workspace' filename='test_results_combined.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='test_results_combined' name='textscan.0a2egvl0mydr7h1h64aa81hvwrgg'>
+            <connection class='textscan' directory='Data/work/tdvt_test/near' filename='test_results_combined.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='test_results_combined (2)' name='textscan.1idfce30qgub0613b5ytz1mbcox5'>
+            <connection class='textscan' directory='Data/work/tdvt_test/near' filename='test_results_combined.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1gc4mna00d9z6u19vsqbk09t94y2leaf' name='test_results_combined.csv' table='[test_results_combined#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=',' text-qualifier='&quot;'>
+            <column datatype='string' name='Suite' ordinal='0' />
+            <column datatype='string' name='Test Set' ordinal='1' />
+            <column datatype='string' name='TDSName' ordinal='2' />
+            <column datatype='string' name='TestName' ordinal='3' />
+            <column datatype='string' name='TestPath' ordinal='4' />
+            <column datatype='boolean' name='Passed' ordinal='5' />
+            <column datatype='integer' name='Closest Expected' ordinal='6' />
+            <column datatype='integer' name='Diff count' ordinal='7' />
+            <column datatype='string' name='Test Case' ordinal='8' />
+            <column datatype='string' name='Test Type' ordinal='9' />
+            <column datatype='string' name='Process Output' ordinal='10' />
+            <column datatype='string' name='Error Msg' ordinal='11' />
+            <column datatype='string' name='Error Type' ordinal='12' />
+            <column datatype='real' name='Query Time (ms)' ordinal='13' />
+            <column datatype='string' name='Generated SQL' ordinal='14' />
+            <column datatype='string' name='Actual (100)tuples' ordinal='15' />
+            <column datatype='string' name='Expected (100)tuples' ordinal='16' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[test_results_combined.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='quote-char'>&quot;\&quot;&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Suite</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Suite]</local-name>
+            <parent-name>[test_results_combined.csv]</parent-name>
+            <remote-alias>Suite</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Test Set</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Test Set]</local-name>
+            <parent-name>[test_results_combined.csv]</parent-name>
+            <remote-alias>Test Set</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TDSName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TDSName]</local-name>
+            <parent-name>[test_results_combined.csv]</parent-name>
+            <remote-alias>TDSName</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TestName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TestName]</local-name>
+            <parent-name>[test_results_combined.csv]</parent-name>
+            <remote-alias>TestName</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TestPath</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TestPath]</local-name>
+            <parent-name>[test_results_combined.csv]</parent-name>
+            <remote-alias>TestPath</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Passed</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Passed]</local-name>
+            <parent-name>[test_results_combined.csv]</parent-name>
+            <remote-alias>Passed</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Closest Expected</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Closest Expected]</local-name>
+            <parent-name>[test_results_combined.csv]</parent-name>
+            <remote-alias>Closest Expected</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Diff count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Diff count]</local-name>
+            <parent-name>[test_results_combined.csv]</parent-name>
+            <remote-alias>Diff count</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Test Case</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Test Case]</local-name>
+            <parent-name>[test_results_combined.csv]</parent-name>
+            <remote-alias>Test Case</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Test Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Test Type]</local-name>
+            <parent-name>[test_results_combined.csv]</parent-name>
+            <remote-alias>Test Type</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Process Output</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Process Output]</local-name>
+            <parent-name>[test_results_combined.csv]</parent-name>
+            <remote-alias>Process Output</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Error Msg</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Error Msg]</local-name>
+            <parent-name>[test_results_combined.csv]</parent-name>
+            <remote-alias>Error Msg</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Error Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Error Type]</local-name>
+            <parent-name>[test_results_combined.csv]</parent-name>
+            <remote-alias>Error Type</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Query Time (ms)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Query Time (ms)]</local-name>
+            <parent-name>[test_results_combined.csv]</parent-name>
+            <remote-alias>Query Time (ms)</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Generated SQL</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Generated SQL]</local-name>
+            <parent-name>[test_results_combined.csv]</parent-name>
+            <remote-alias>Generated SQL</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Actual (100)tuples</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Actual (100)tuples]</local-name>
+            <parent-name>[test_results_combined.csv]</parent-name>
+            <remote-alias>Actual (100)tuples</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Expected (100)tuples</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Expected (100)tuples]</local-name>
+            <parent-name>[test_results_combined.csv]</parent-name>
+            <remote-alias>Expected (100)tuples</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Actual Tuples' datatype='string' name='[Actual (100)tuples]' role='dimension' type='nominal' />
+      <column caption='Test Category' datatype='string' name='[Calculation_1487173092637745153]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF CONTAINS([TestName], &quot;.&quot;)&#10;THEN MID([TestName], &#10;          0, &#10;          find([TestName], &apos;.&apos;)-1&#10;         )&#10;ELSE [TestName]&#10;END' />
+      </column>
+      <column caption='Test Sub-Category' datatype='string' name='[Calculation_1487173092638240770]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='MID([TestName], find([TestName], &apos;.&apos;)+1, FINDNTH([TestName], &apos;.&apos;, 2))' />
+      </column>
+      <column caption='% Passed' datatype='real' default-format='p0%' name='[Calculation_1487173092639092739]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='sum(Int([Passed]))/sum([Number of Records])' />
+      </column>
+      <column caption='Error Msg Standard' datatype='string' name='[Calculation_1487173092642668549]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='TRIM(MID([Error Msg], FINDNTH([Error Msg], &quot;:&quot;, 3)+ 1 , 100))' />
+      </column>
+      <column caption='Failed' datatype='integer' name='[Calculation_1487173092643217414]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Passed] = False THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='Error Msg Standard Category' datatype='string' name='[Calculation_1487173092652093447]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF CONTAINS([Calculation_1487173092642668549], &quot;cannot be resolved&quot;) &#10;  THEN &quot;Cannot be Resolved&quot;&#10;ELSEIF  CONTAINS([Calculation_1487173092642668549], &quot;not registered&quot;) &#10;  THEN &quot;Not Registered&quot;&#10;ELSEIF CONTAINS([Calculation_1487173092642668549], &quot;did you mean&quot;) &#10;  THEN &quot;Did you mean?&quot;&#10;ELSE &quot;Other&quot;&#10;END' />
+      </column>
+      <column caption='Expected Tuples' datatype='string' name='[Expected (100)tuples]' role='dimension' type='nominal' />
+      <column caption='Generated SQL1' datatype='string' name='[Generated SQL]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Passed Test' datatype='boolean' name='[Passed (copy)]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Passed]' />
+      </column>
+      <column datatype='boolean' name='[Passed]' role='dimension' type='nominal' />
+      <column caption='Test Name' datatype='string' name='[TestName]' role='dimension' type='nominal' />
+      <column-instance column='[Passed]' derivation='None' name='[none:Passed:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Test Category)' hidden='true' name='[Action (Test Category)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_1487173092637745153]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Test Category,Error Msg Standard Category)' hidden='true' name='[Action (Test Category,Error Msg Standard Category)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_1487173092637745153]' />
+          <groupfilter function='level-members' level='[Calculation_1487173092652093447]' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' dim-percentage='0.608905' measure-ordering='alphabetic' measure-percentage='0.391095' show-structure='true' user-set-layout='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Passed:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>false</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>true</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='TDSName' />
+        <field-sort-custom-order field='TestName' />
+        <field-sort-custom-order field='Calculation_1487173092638240770' />
+        <field-sort-custom-order field='Calculation_1487173092637745153' />
+        <field-sort-custom-order field='Passed' />
+        <field-sort-custom-order field='Closest Expected' />
+        <field-sort-custom-order field='Diff count' />
+        <field-sort-custom-order field='Test Case' />
+        <field-sort-custom-order field='Error Msg' />
+        <field-sort-custom-order field='Query Time (ms)' />
+        <field-sort-custom-order field='Generated SQL' />
+        <field-sort-custom-order field='Actual tuples' />
+        <field-sort-custom-order field='Expected tuples' />
+        <field-sort-custom-order field='Error Type' />
+        <field-sort-custom-order field='Actual (100)tuples' />
+        <field-sort-custom-order field='Expected (100)tuples' />
+        <field-sort-custom-order field='Calculation_1487173092639092739' />
+        <field-sort-custom-order field='Calculation_1487173092642668549' />
+        <field-sort-custom-order field='Calculation_1487173092643217414' />
+        <field-sort-custom-order field='Calculation_1487173092652093447' />
+        <field-sort-custom-order field='Passed (copy)' />
+      </field-sort-info>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Functional Test Passes' type='sheet' worksheet='Test Cast Performance' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Functional Test Passes' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Test Case Failures by Error Message'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='test_results_combined' name='textscan.1gc4mna00d9z6u19vsqbk09t94y2' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.1gc4mna00d9z6u19vsqbk09t94y2'>
+            <column caption='Error Msg Standard' datatype='string' name='[Calculation_1487173092642668549]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='TRIM(MID([Error Msg], FINDNTH([Error Msg], &quot;:&quot;, 3)+ 1 , 100))' />
+            </column>
+            <column caption='Failed' datatype='integer' name='[Calculation_1487173092643217414]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Passed] = False THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Error Msg Standard Category' datatype='string' name='[Calculation_1487173092652093447]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF CONTAINS([Calculation_1487173092642668549], &quot;cannot be resolved&quot;) &#10;  THEN &quot;Cannot be Resolved&quot;&#10;ELSEIF  CONTAINS([Calculation_1487173092642668549], &quot;not registered&quot;) &#10;  THEN &quot;Not Registered&quot;&#10;ELSEIF CONTAINS([Calculation_1487173092642668549], &quot;did you mean&quot;) &#10;  THEN &quot;Did you mean?&quot;&#10;ELSE &quot;Other&quot;&#10;END' />
+            </column>
+            <column datatype='string' name='[Error Msg]' role='dimension' type='nominal' />
+            <column datatype='boolean' name='[Passed]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1487173092642668549]' derivation='None' name='[none:Calculation_1487173092642668549:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1487173092652093447]' derivation='None' name='[none:Calculation_1487173092652093447:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1487173092643217414]' derivation='Sum' name='[pcto:sum:Calculation_1487173092643217414:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Calculation_1487173092643217414]' derivation='Sum' name='[sum:Calculation_1487173092643217414:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[textscan.1gc4mna00d9z6u19vsqbk09t94y2].[none:Calculation_1487173092642668549:nk]' direction='DESC' using='[textscan.1gc4mna00d9z6u19vsqbk09t94y2].[sum:Calculation_1487173092643217414:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[textscan.1gc4mna00d9z6u19vsqbk09t94y2].[none:Calculation_1487173092642668549:nk]' value='17' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[textscan.1gc4mna00d9z6u19vsqbk09t94y2].[none:Calculation_1487173092642668549:nk]' value='444' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[textscan.1gc4mna00d9z6u19vsqbk09t94y2].[pcto:sum:Calculation_1487173092643217414:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([textscan.1gc4mna00d9z6u19vsqbk09t94y2].[none:Calculation_1487173092652093447:nk] / [textscan.1gc4mna00d9z6u19vsqbk09t94y2].[none:Calculation_1487173092642668549:nk])</rows>
+        <cols>[textscan.1gc4mna00d9z6u19vsqbk09t94y2].[sum:Calculation_1487173092643217414:qk]</cols>
+        <subtotals>
+          <column>[textscan.1gc4mna00d9z6u19vsqbk09t94y2].[none:Calculation_1487173092652093447:nk]</column>
+        </subtotals>
+      </table>
+      <simple-id uuid='{B9E9FD9A-C3AD-44BC-96F1-02D301717470}' />
+    </worksheet>
+    <worksheet name='Test Cast Performance'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt;</run>
+            <run bold='false' fontname='Arial' fontsize='9'>&#10;Summary of Test Case pass rate by Test Category. The first test &quot;calcs_data&quot; checks whether the data is loaded properly, if this is not 100% then other tests will likely fail as well.</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run>Summary of Test Case pass rate by Test Category. The first test &quot;calcs_data&quot; checks whether the data is loaded properly, if this is not 100% then other tests will likely fail as well.</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='test_results_combined' name='textscan.1gc4mna00d9z6u19vsqbk09t94y2' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.1gc4mna00d9z6u19vsqbk09t94y2'>
+            <column caption='Test Category' datatype='string' name='[Calculation_1487173092637745153]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF CONTAINS([TestName], &quot;.&quot;)&#10;THEN MID([TestName], &#10;          0, &#10;          find([TestName], &apos;.&apos;)-1&#10;         )&#10;ELSE [TestName]&#10;END' />
+            </column>
+            <column caption='% Passed' datatype='real' default-format='p0%' name='[Calculation_1487173092639092739]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum(Int([Passed]))/sum([Number of Records])' />
+            </column>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='boolean' name='[Passed]' role='dimension' type='nominal' />
+            <column caption='Test Name' datatype='string' name='[TestName]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1487173092637745153]' derivation='None' name='[none:Calculation_1487173092637745153:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1487173092639092739]' derivation='User' name='[usr:Calculation_1487173092639092739:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[textscan.1gc4mna00d9z6u19vsqbk09t94y2].[none:Calculation_1487173092637745153:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;calcs_data&quot;</bucket>
+              <bucket>&quot;agg&quot;</bucket>
+              <bucket>&quot;cast&quot;</bucket>
+              <bucket>&quot;date&quot;</bucket>
+              <bucket>&quot;logical&quot;</bucket>
+              <bucket>&quot;math&quot;</bucket>
+              <bucket>&quot;operator&quot;</bucket>
+              <bucket>&quot;string&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[textscan.1gc4mna00d9z6u19vsqbk09t94y2].[usr:Calculation_1487173092639092739:qk]' field-type='quantitative' max='1.0' min='0.0' range-type='fixed' scope='cols' type='space' />
+            <format attr='subtitle' class='0' field='[textscan.1gc4mna00d9z6u19vsqbk09t94y2].[usr:Calculation_1487173092639092739:qk]' scope='cols' value='' />
+            <format attr='auto-subtitle' class='0' field='[textscan.1gc4mna00d9z6u19vsqbk09t94y2].[usr:Calculation_1487173092639092739:qk]' scope='cols' value='true' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[textscan.1gc4mna00d9z6u19vsqbk09t94y2].[usr:Calculation_1487173092639092739:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[textscan.1gc4mna00d9z6u19vsqbk09t94y2].[usr:Calculation_1487173092639092739:qk]' palette='tableau-red-green' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[textscan.1gc4mna00d9z6u19vsqbk09t94y2].[usr:Calculation_1487173092639092739:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows total='true'>[textscan.1gc4mna00d9z6u19vsqbk09t94y2].[none:Calculation_1487173092637745153:nk]</rows>
+        <cols>[textscan.1gc4mna00d9z6u19vsqbk09t94y2].[usr:Calculation_1487173092639092739:qk]</cols>
+      </table>
+      <simple-id uuid='{4049B936-E6DA-4602-B493-35101FBB9521}' />
+    </worksheet>
+    <worksheet name='Test Details'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt;</run>
+            <run bold='false' fontname='Arial' fontsize='9'>&#10;Shows all failed test cases for the selected test category.  If the driver or database reported an error it will appear in the first column, followed by the test category, name, generated SQL, expected and actual results.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='test_results_combined' name='textscan.1gc4mna00d9z6u19vsqbk09t94y2' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.1gc4mna00d9z6u19vsqbk09t94y2'>
+            <column caption='Actual Tuples' datatype='string' name='[Actual (100)tuples]' role='dimension' type='nominal' />
+            <column caption='Test Category' datatype='string' name='[Calculation_1487173092637745153]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF CONTAINS([TestName], &quot;.&quot;)&#10;THEN MID([TestName], &#10;          0, &#10;          find([TestName], &apos;.&apos;)-1&#10;         )&#10;ELSE [TestName]&#10;END' />
+            </column>
+            <column caption='Error Msg Standard' datatype='string' name='[Calculation_1487173092642668549]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='TRIM(MID([Error Msg], FINDNTH([Error Msg], &quot;:&quot;, 3)+ 1 , 100))' />
+            </column>
+            <column caption='Error Msg Standard Category' datatype='string' name='[Calculation_1487173092652093447]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF CONTAINS([Calculation_1487173092642668549], &quot;cannot be resolved&quot;) &#10;  THEN &quot;Cannot be Resolved&quot;&#10;ELSEIF  CONTAINS([Calculation_1487173092642668549], &quot;not registered&quot;) &#10;  THEN &quot;Not Registered&quot;&#10;ELSEIF CONTAINS([Calculation_1487173092642668549], &quot;did you mean&quot;) &#10;  THEN &quot;Did you mean?&quot;&#10;ELSE &quot;Other&quot;&#10;END' />
+            </column>
+            <column datatype='string' name='[Error Msg]' role='dimension' type='nominal' />
+            <column caption='Expected Tuples' datatype='string' name='[Expected (100)tuples]' role='dimension' type='nominal' />
+            <column caption='Generated SQL1' datatype='string' name='[Generated SQL]' role='dimension' type='nominal' />
+            <column datatype='boolean' name='[Passed]' role='dimension' type='nominal' />
+            <column caption='Test Name' datatype='string' name='[TestName]' role='dimension' type='nominal' />
+            <column-instance column='[Actual (100)tuples]' derivation='None' name='[none:Actual (100)tuples:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1487173092637745153]' derivation='None' name='[none:Calculation_1487173092637745153:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1487173092642668549]' derivation='None' name='[none:Calculation_1487173092642668549:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1487173092652093447]' derivation='None' name='[none:Calculation_1487173092652093447:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Expected (100)tuples]' derivation='None' name='[none:Expected (100)tuples:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Generated SQL]' derivation='None' name='[none:Generated SQL:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Passed]' derivation='None' name='[none:Passed:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TestName]' derivation='None' name='[none:TestName:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[textscan.1gc4mna00d9z6u19vsqbk09t94y2].[Action (Test Category)]'>
+            <groupfilter function='level-members' level='[Calculation_1487173092637745153]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[textscan.1gc4mna00d9z6u19vsqbk09t94y2].[Action (Test Category,Error Msg Standard Category)]'>
+            <groupfilter function='crossjoin' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_1487173092637745153]' />
+              <groupfilter function='level-members' level='[Calculation_1487173092652093447]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[textscan.1gc4mna00d9z6u19vsqbk09t94y2].[Action (Test Category)]</column>
+            <column>[textscan.1gc4mna00d9z6u19vsqbk09t94y2].[Action (Test Category,Error Msg Standard Category)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[textscan.1gc4mna00d9z6u19vsqbk09t94y2].[none:Generated SQL:nk]' value='296' />
+            <format attr='width' field='[textscan.1gc4mna00d9z6u19vsqbk09t94y2].[none:TestName:nk]' value='168' />
+            <format attr='width' field='[textscan.1gc4mna00d9z6u19vsqbk09t94y2].[none:Expected (100)tuples:nk]' value='416' />
+            <format attr='width' field='[textscan.1gc4mna00d9z6u19vsqbk09t94y2].[none:Calculation_1487173092642668549:nk]' value='280' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[textscan.1gc4mna00d9z6u19vsqbk09t94y2].[none:Passed:nk]' />
+              <lod column='[textscan.1gc4mna00d9z6u19vsqbk09t94y2].[none:Calculation_1487173092652093447:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([textscan.1gc4mna00d9z6u19vsqbk09t94y2].[none:Calculation_1487173092642668549:nk] / ([textscan.1gc4mna00d9z6u19vsqbk09t94y2].[none:Calculation_1487173092637745153:nk] / ([textscan.1gc4mna00d9z6u19vsqbk09t94y2].[none:TestName:nk] / ([textscan.1gc4mna00d9z6u19vsqbk09t94y2].[none:Generated SQL:nk] / ([textscan.1gc4mna00d9z6u19vsqbk09t94y2].[none:Actual (100)tuples:nk] / [textscan.1gc4mna00d9z6u19vsqbk09t94y2].[none:Expected (100)tuples:nk])))))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{D0424466-D293-40FD-99C5-90DB5B66F73D}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Functional Test Passes'>
+      <style />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98304' id='11' param='vert' type='layout-flow' w='99064' x='468' y='848'>
+            <zone h='4030' id='10' type='title' w='99064' x='468' y='848'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='margin-top' value='0' />
+                <format attr='margin-right' value='0' />
+                <format attr='margin-left' value='0' />
+              </zone-style>
+            </zone>
+            <zone h='94274' id='9' param='horz' type='layout-flow' w='99064' x='468' y='4878'>
+              <zone h='94274' id='5' param='horz' type='layout-flow' w='99064' x='468' y='4878'>
+                <zone h='94274' id='3' type='layout-basic' w='99064' x='468' y='4878'>
+                  <zone h='39354' id='1' name='Test Cast Performance' w='84142' x='468' y='4878'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                      <format attr='margin-left' value='0' />
+                    </zone-style>
+                  </zone>
+                  <zone h='54920' id='7' name='Test Details' w='99064' x='468' y='44232'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                      <format attr='margin-bottom' value='0' />
+                      <format attr='margin-left' value='0' />
+                    </zone-style>
+                  </zone>
+                  <zone h='39354' id='12' type='text' w='14922' x='84610' y='4878'>
+                    <formatted-text>
+                      <run bold='true'>How to use this Viz</run>
+                      <run>&#10;Click on one of the bars to see all of the failed test cases.  The test category indicates the set of test cases that have failed.</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='4' />
+            <format attr='margin-top' value='8' />
+            <format attr='margin-right' value='8' />
+            <format attr='margin-bottom' value='8' />
+            <format attr='margin-left' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{51A4EE4C-6303-4A12-AA1F-0A23CBE145E0}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='Functional Test Passes'>
+      <viewpoints>
+        <viewpoint name='Test Cast Performance'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Test Details'>
+          <zoom type='fit-width' />
+        </viewpoint>
+      </viewpoints>
+      <active id='1' />
+      <simple-id uuid='{BD84CE5B-C3A9-440E-A66A-42CA3430A4CF}' />
+    </window>
+    <window class='worksheet' name='Test Case Failures by Error Message'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9E12F5AB-30FA-45EC-8B61-61B4E55C1D62}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Test Cast Performance'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='37'>
+            <card type='rows' />
+          </strip>
+          <strip size='8'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[textscan.1gc4mna00d9z6u19vsqbk09t94y2].[usr:Calculation_1487173092639092739:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1F81F5AC-0C62-4ED4-8A3F-8E8C26EAFB06}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Test Details'>
+      <cards>
+        <edge name='left'>
+          <strip size='152'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='8'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[textscan.1gc4mna00d9z6u19vsqbk09t94y2].[none:Passed:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{A015E8E8-7AF6-4CE8-ADFA-C623DABC48A6}' />
+    </window>
+  </windows>
+</workbook>

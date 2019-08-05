@@ -1,0 +1,7 @@
+2019-07-15 19:52:50,756 TDVT version: 1.5.14
+2019-07-15 19:52:50,757 Reading registry ini file [/Users/georgewang/aliwork/connector-plugin-sdk/tdvt/tdvt/config/registry/mac.ini]
+2019-07-15 19:52:50,758 Reading tdvt ini file [/Users/georgewang/aliwork/tableau_connector_sdk/config/tdvt/tdvt_override.ini]
+2019-07-15 19:52:50,758 Reading tdvt ini file tabquerycli path is [/Applications/Tableau Desktop 2019.2.app/Contents/MacOS/tabquerytool]
+2019-07-15 19:52:50,758 Checking generated logical setup files...
+2019-07-15 19:52:50,795 Found tabquery at [/Applications/Tableau Desktop 2019.2.app/Contents/MacOS/tabquerytool]
+2019-07-15 19:52:50,795 test queue size is 0

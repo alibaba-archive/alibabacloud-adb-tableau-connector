@@ -1,0 +1,8 @@
+mysql -h127.0.0.1 -P3303 -ukepler -Ac < /Users/georgewang/aliwork/connector-plugin-sdk/tests/datasets/TestV1/createdb.sql
+mysql -h127.0.0.1 -P3303 -ukepler -Ac -Dtestv1 < /Users/georgewang/aliwork/connector-plugin-sdk/tests/datasets/TestV1/DDL/Batters.sql
+mysql -h127.0.0.1 -P3303 -ukepler -Ac -Dtestv1< /Users/georgewang/aliwork/connector-plugin-sdk/tests/datasets/TestV1/DDL/Calcs.sql
+mysql -h127.0.0.1 -P3303 -ukepler -Ac -Dtestv1</Users/georgewang/aliwork/connector-plugin-sdk/tests/datasets/TestV1/DDL/Staples.sql
+
+mysql -h127.0.0.1 -P3303 -ukepler -Ac -Dtestv1 < /Users/georgewang/aliwork/connector-plugin-sdk/tests/datasets/TestV1/Batters.sql
+mysql -h127.0.0.1 -P3303 -ukepler -Ac -Dtestv1 < /Users/georgewang/aliwork/connector-plugin-sdk/tests/datasets/TestV1/Calcs.sql
+mysql -h127.0.0.1 -P3303 -ukepler -Ac -Dtestv1 < /Users/georgewang/aliwork/connector-plugin-sdk/tests/datasets/TestV1/Staples.sql
