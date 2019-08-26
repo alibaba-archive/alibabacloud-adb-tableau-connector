@@ -2,11 +2,11 @@
 {
     var params = {};
 
-    params["SERVER"] = attr["server"];
-    params["PORT"] = attr["port"];
-    params["DATABASE"] = attr["dbname"];
-    params["UID"] = attr["username"];
-    params["PWD"] = attr["password"];
+    params["SERVER"] = attr[connectionHelper.attributeServer];
+    params["PORT"] = attr[connectionHelper.attributePort];
+    params["DATABASE"] = attr[connectionHelper.attributeDatabase];
+    params["UID"] = attr[connectionHelper.attributeUsername];
+    params["PWD"] = attr[connectionHelper.attributePassword];
     params["SslMode"] = "0";
 
     var formattedParams = [];
